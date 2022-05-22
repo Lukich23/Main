@@ -74,9 +74,11 @@ bottom: 50px;
 .desc{
 	color: white;
 	font-size: 40px;
+    font-weight: bold;
 }
 
 .card:hover{
 bottom: 45%;
   cursor:pointer
 }
+
