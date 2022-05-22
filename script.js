@@ -1,3 +1,4 @@
+/*
 const Confirm = {
     open (options) {
         options = Object.assign({}, {
@@ -64,3 +65,4 @@ const Confirm = {
         });
     }
 };
+*/
