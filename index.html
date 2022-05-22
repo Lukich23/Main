@@ -13,10 +13,28 @@
     <button id="btnChangeBg" class="btn-primary main-button">Kliknij na mnie!</button>
   </div>
   
-  <iframe width="853" height="480" src="https://www.youtube.com/embed/QaR31V5xBQ8?autoplay=1" title="DJ Bobo - Happy Birthday" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  <audio id="aux" controls autoplay>
+    <source src="music/astronomia.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio>
 
 <script>
   document.querySelector('#btnChangeBg').addEventListener('click', () => {
+    Confirm.open({
+      title: 'Droga Ewelino',
+      message: 'Chcesz zobaczyć present?',
+      onok: () => {
+        document.body.style.backgroundImage = "url('https://fajnepodroze.pl/wp-content/uploads/2020/04/bazant.jpg')";
+        document.body.style.backgroundRepeat = "no-repeat')";
+        document.body.style.backgroundSize = "contain')";
+        document.body.style.backgroundSize = "center')";
+      }
+    })
+  });
+
+  var vid = document.getElementById("aux");
+  vid.onplay = function() {
     Confirm.open({
       title: 'Szanowna Pani Ewo',
       message: 'Czy chcesz zobaczyć zdjęcie Antona ?',
@@ -27,7 +45,7 @@
         document.body.style.backgroundSize = "center')";
       }
     })
-  });
+};
 </script>
 <script src="script.js"></script>
 </body>
