@@ -30,7 +30,7 @@ Jestem szczęśliwy, że spotkałem Cię w swoim życiu ...</div>
 
 <div class="front_container">
 	
-	<div class="front">
+	<div class="front" onclick="pause()">
 		
 	</div>
 
@@ -43,6 +43,11 @@ Jestem szczęśliwy, że spotkałem Cię w swoim życiu ...</div>
   function play() {
     var audio = document.getElementById("audio");
     audio.play();
+  }
+
+  function pause() {
+    var audio = document.getElementById("audio");
+    audio.pause();
   }
 </script>
 </body>
