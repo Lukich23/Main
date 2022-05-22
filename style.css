@@ -1,8 +1,8 @@
 .container{
 position: absolute;
 display: flex;
-width: 600px;
-height: 500px;
+width: 300px;
+height: 250px;
 justify-content: center;
 
 top: 50%;
@@ -14,8 +14,8 @@ transform: translate(-50%, -50%);
 .back{
 display: flex;
 position: absolute;
-width: 600px;
-height: 500px;
+width: 300px;
+height: 250px;
 background-color: transparent;
 z-index: -1;
 }
@@ -29,8 +29,8 @@ z-index: -1;
 
 .front{
 position: absolute;
-width: 600px;
-height: 225px;
+width: 300px;
+height: 112.5px;
 background-color: #EEC048;
 
 box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.5);
@@ -44,9 +44,9 @@ bottom: 0;
 .topTriangle{
     width: 0;
 	height: 0;
-	border-left: 300px solid transparent;
-	border-right: 300px solid transparent;
-	border-bottom: 275px solid #EEC048;
+	border-left: 150px solid transparent;
+	border-right: 150px solid transparent;
+	border-bottom: 137.5px solid #EEC048;
 	align-self: flex-start;  
 }
 
@@ -55,8 +55,8 @@ bottom: 0;
 position: absolute;
 display: flex;
 flex-direction: column;
-width: 540px;
-height: 240px;
+width: 270px;
+height: 120px;
 border-radius: 4px;
 background-color: #546E7A;
 transition: bottom 0.5s ease 0s;
