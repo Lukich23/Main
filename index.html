@@ -22,7 +22,7 @@
 
 	</div>
 
-	<div class="card">
+	<div class="card" onclick="play()">
 		<div class="heart">♥</div>
 		<div class="desc">
 Jestem szczęśliwy, że spotkałem Cię w swoim życiu ...</div> 
@@ -37,5 +37,13 @@ Jestem szczęśliwy, że spotkałem Cię w swoim życiu ...</div>
 </div>
 	
 </div>
+
+<audio id="audio" src="music/astronomia.mp3"></audio>
+<script>
+  function play() {
+    var audio = document.getElementById("audio");
+    audio.play();
+  }
+</script>
 </body>
 </html>
