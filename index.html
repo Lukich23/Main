@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
@@ -26,7 +29,7 @@
 		<div></div>
 		<div></div>
 	</div>	
-	<h2>Kliknij na serduszko</h2>
+	<h2 id="text-instruction">Kliknij na serduszko</h2>
   
 <div class="container">
 
@@ -70,6 +73,9 @@ Jestem szczęśliwy, że spotkałem Cię w swoim życiu</div>
         }
     var bodyTag = document.getElementsByTagName('body')[0];
     bodyTag.classList.add('background');
+    var title = document.getElementById('text-instruction');
+    title.style.color = "#FFFFFF"; 
+    title.textContent = "Żeby wyłączyć, kliknij na list";
   }
 
   function pause() {
@@ -83,6 +89,9 @@ Jestem szczęśliwy, że spotkałem Cię w swoim życiu</div>
         }
     var bodyTag = document.getElementsByTagName('body')[0];
     bodyTag.classList.remove('background');
+    var title = document.getElementById('text-instruction');
+    title.style.color = "#000000"; 
+    title.textContent = "Kliknij na serduszko";
   }
 </script>
 </body>

@@ -10,7 +10,13 @@ left: 50%;
 transform: translate(-50%, -50%);
 
 }
-	
+
+#text-instruction {
+	font-family: 'Libre Baskerville', serif;
+	text-align: center;
+
+}
+
 .back{
 display: flex;
 position: absolute;
@@ -73,7 +79,8 @@ bottom: 50px;
 
 .desc{
 	color: white;
-	font-size: 24px;
+	font-size: 22px;
+	font-family: 'Libre Baskerville', serif;
 }
 
 .card:hover{
