@@ -8,10 +8,26 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
-
 <body>
+	<div id="wrapper">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>	
 	<h2>Kliknij na serduszko</h2>
-
+  
 <div class="container">
 
 	<div class="back">
@@ -38,20 +54,35 @@ Jestem szczęśliwy, że spotkałem Cię w swoim życiu</div>
 	
 </div>
 
-<div id='mydiv'></div>
 
 <audio id="audio" src="music/lovely.mp3"></audio>
+
+
 <script>
   function play() {
     var audio = document.getElementById("audio");
     audio.play();
-    var element = document.getElementById("mydiv");
-    element.classList.add("animation-background");
+    var element = document.getElementById('wrapper');
+        var children = element.children;
+        for(var i=0; i<children.length; i++){
+            var child = children[i];
+            child.classList.add("firefly");
+        }
+    var bodyTag = document.getElementsByTagName('body')[0];
+    bodyTag.classList.add('background');
   }
 
   function pause() {
     var audio = document.getElementById("audio");
     audio.pause();
+    var element = document.getElementById('wrapper');
+        var children = element.children;
+        for(var i=0; i<children.length; i++){
+            var child = children[i];
+            child.classList.remove("firefly"); 
+        }
+    var bodyTag = document.getElementsByTagName('body')[0];
+    bodyTag.classList.remove('background');
   }
 </script>
 </body>
