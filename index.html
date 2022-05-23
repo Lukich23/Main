@@ -25,7 +25,7 @@
 	<div class="card" onclick="play()">
 		<div class="heart">♥ </div>
 		<div class="desc">
-Jestem szczęśliwy, że spotkałem Cię w swoim życiu ...</div> 
+Jestem szczęśliwy, że spotkałem Cię w swoim życiu</div> 
 	</div>
 
 <div class="front_container">
@@ -38,11 +38,15 @@ Jestem szczęśliwy, że spotkałem Cię w swoim życiu ...</div>
 	
 </div>
 
-<audio id="audio" src="music/something_just_like_this.mp3"></audio>
+<div id='mydiv'></div>
+
+<audio id="audio" src="music/lovely.mp3"></audio>
 <script>
   function play() {
     var audio = document.getElementById("audio");
     audio.play();
+    var element = document.getElementById("mydiv");
+    element.classList.add("animation-background");
   }
 
   function pause() {

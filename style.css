@@ -81,3 +81,23 @@ bottom: 45%;
   cursor:pointer
 }
 
+.animation-background { 
+	animation: changeBg 10s infinite; 
+	width: 100%; 
+	height:100px; 
+}
+
+@keyframes changeBg{
+	0%  {background-image: url("https://cdn.wallpapersafari.com/68/98/l8vWst.jpg");}
+	20% {background-image: url("https://cdn.wallpapersafari.com/68/98/l8vWst.jpg");}
+    30% {background-image: url("https://cdn.wallpapersafari.com/68/98/l8vWst.jpg");}
+    40% {background-image: url("https://cdn.wallpapersafari.com/68/98/l8vWst.jpg");}
+	50% {background-image: url("https://cdn.wallpapersafari.com/68/98/l8vWst.jpg");}
+    60% {background-image: url("https://cdn.wallpapersafari.com/68/98/l8vWst.jpg");}
+    70% {background-image: url("https://cdn.wallpapersafari.com/68/98/l8vWst.jpg");}
+	80% {background-image: url("https://cdn.wallpapersafari.com/68/98/l8vWst.jpg");}
+    90% {background-image: url("https://cdn.wallpapersafari.com/68/98/l8vWst.jpg");}
+	100%  {background-image: url("https://cdn.wallpapersafari.com/68/98/l8vWst.jpg");}
+   
+ }
+
